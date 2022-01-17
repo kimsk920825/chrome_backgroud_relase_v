@@ -4,6 +4,7 @@ const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+const usernameValue = localStorage.getItem(USERNAME_KEY);
 
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -17,10 +18,6 @@ function greetingHandle(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerHTML = `Hello ${username}`;
 }
-
-loginForm.addEventListener("submit", onLoginSubmit);
-
-const usernameValue = localStorage.getItem(USERNAME_KEY);
 
 if (usernameValue === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
