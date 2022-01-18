@@ -26,12 +26,3 @@ if (usernameValue === null) {
 } else {
   greetingHandle(usernameValue);
 }
-
-/*
-form은 수긱고 h1은 표시하라.
-하지만 h1에 표시할 텍스트가 있을때만 표시하라
-브라우저의 기본 동작을 방지하고
-input값을 username에 저장하며
-로그인 폼을 없애주고
-username을 h1태그에 나올 수 있게 세팅하라.
-*/
