@@ -1,6 +1,7 @@
 const clock = document.querySelector("h2#clock");
 
 clock.innerHTML = "clock!";
+clock.classList.add("jb-white");
 
 function getClock() {
   const date = new Date();

@@ -16,7 +16,8 @@ function onLoginSubmit(event) {
 }
 function greetingHandle(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerHTML = `Hello ${username}`;
+  greeting.innerHTML = `${username}`;
+  greeting.classList.add("jb-white");
 }
 
 if (usernameValue === null) {

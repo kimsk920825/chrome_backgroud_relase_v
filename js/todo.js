@@ -33,6 +33,7 @@ function toPaintList(newList) {
   li.id = newList.id;
   const span = document.createElement("span");
   span.innerText = newList.text;
+  span.classList.add("box");
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteToDo);

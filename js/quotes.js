@@ -54,4 +54,6 @@ const author = document.querySelector("div#quote span:last-child");
 const todayQuotes = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuotes.quote;
+quote.classList.add("jb-white");
 author.innerText = todayQuotes.author;
+author.classList.add("jb-white");
